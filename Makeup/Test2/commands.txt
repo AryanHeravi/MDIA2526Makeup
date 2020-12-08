@@ -1,0 +1,152 @@
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop
+$ mkdir Makeup
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop
+$ mkdir Test2
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop
+$ cd Test2
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/Test2
+$ touch commands.txt
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/Test2
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/Test2
+$ cd ..
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop
+$ git clone https://github.com/AryanHeravi/MDIA2526Makeup.git
+Cloning into 'MDIA2526Makeup'...
+warning: You appear to have cloned an empty repository.
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop
+$ cd MDIA2526Makeup
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ mv Makeup MDIA2526Makeup
+mv: cannot stat 'Makeup': No such file or directory
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git status
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+[master (root-commit) f486ce8] First Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Makeup/Test2/commands.txt
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 298 bytes | 74.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AryanHeravi/MDIA2526Makeup.git
+ * [new branch]      master -> master
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ touch repo.txt
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ nano repo.txt
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        repo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git add repo.txt
+warning: LF will be replaced by CRLF in repo.txt.
+The file will have its original line endings in your working directory
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   repo.txt
+
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git commit -m "added respository link inside"
+[master 3bc3ae5] added respository link inside
+ 1 file changed, 6 insertions(+)
+ create mode 100644 repo.txt
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git commit origin master
+error: pathspec 'origin' did not match any file(s) known to git
+error: pathspec 'master' did not match any file(s) known to git
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 338 bytes | 169.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AryanHeravi/MDIA2526Makeup.git
+   f486ce8..3bc3ae5  master -> master
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ touch index.html
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ nano index.html
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git add index.html
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git commit -m "Added text you asked for"
+[master 7ab5181] Added text you asked for
+ 1 file changed, 4 insertions(+)
+ create mode 100644 index.html
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 346 bytes | 173.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AryanHeravi/MDIA2526Makeup.git
+   3bc3ae5..7ab5181  master -> master
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$
