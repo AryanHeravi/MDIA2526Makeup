@@ -149,4 +149,246 @@ To https://github.com/AryanHeravi/MDIA2526Makeup.git
    3bc3ae5..7ab5181  master -> master
 
 Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
-$
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Makeup/Test2/commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git add Makeup/Test2/commands.txt -m
+error: unknown switch `m'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git add Makeup/Test2/commands.txt
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git commit -m
+error: switch `m' requires a value
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Makeup/Test2/commands.txt
+
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git commit
+[master 2bf8e53] P1 commands
+ 1 file changed, 152 insertions(+)
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 1.40 KiB | 477.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AryanHeravi/MDIA2526Makeup.git
+   7ab5181..2bf8e53  master -> master
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ cd ..
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop
+$ mkdir Q1
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop
+$ cp MDIA2526Makeup Q1
+cp: -r not specified; omitting directory 'MDIA2526Makeup'
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop
+$ cp -r MDIA2526Makeup Q1
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop
+$ cp MDIA2526Makeup
+cp: missing destination file operand after 'MDIA2526Makeup'
+Try 'cp --help' for more information.
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop
+$ cd MDIA21526Makeup
+bash: cd: MDIA21526Makeup: No such file or directory
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop
+$ MDIA2526Makeup
+bash: MDIA2526Makeup: command not found
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop
+$ cd MDIA2526Makeup
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git branch
+* master
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git branch special_feature
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git branch
+* master
+  special_feature
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (master)
+$ git checkout special_feature
+Switched to branch 'special_feature'
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git branch
+  master
+* special_feature
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ touch style.css
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ touch app.js
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git status
+On branch special_feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git add app.js style.css
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git status
+On branch special_feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   app.js
+        new file:   style.css
+
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git commit -m "adding both files"
+[special_feature 02172fd] adding both files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 app.js
+ create mode 100644 style.css
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git push origin special_feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 354 bytes | 177.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'special_feature' on GitHub by visiting:
+remote:      https://github.com/AryanHeravi/MDIA2526Makeup/pull/new/special_feature
+remote:
+To https://github.com/AryanHeravi/MDIA2526Makeup.git
+ * [new branch]      special_feature -> special_feature
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ nano style.css
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ nano app.js
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git status
+On branch special_feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   app.js
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git add app.js style.css
+warning: LF will be replaced by CRLF in app.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in style.css.
+The file will have its original line endings in your working directory
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git commit -m "made changes"
+[special_feature f8a211c] made changes
+ 2 files changed, 4 insertions(+)
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git push origin special_feature
+Enumerating objects: 7, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 326 bytes | 163.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/AryanHeravi/MDIA2526Makeup.git
+   02172fd..f8a211c  special_feature -> special_feature
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git branch
+  master
+* special_feature
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git branch commands
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git branch
+  commands
+  master
+* special_feature
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (special_feature)
+$ git checkout commands
+Switched to branch 'commands'
+
+Aryan@Aryans-LapTop MINGW64 ~/desktop/MDIA2526Makeup (commands)
+$ git branch
+* commands
+  master
+  special_feature
+
